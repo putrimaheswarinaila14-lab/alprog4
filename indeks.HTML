@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+      /* Pengaturan Dasar Tampilan */
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: rgb(252, 252, 252);
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: rgb(220, 236, 125);
+      padding: 10px;
+      text-align: center;
+    }
+    /* Menampilkan Menu Navigasi di Atas */
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      color: rgb(137, 153, 101);
+      text-decoration: underline;
+    }
+    /* Tempat pertama isi web ditampilkan */
+    .container {
+      width: 70%;
+      margin: 40px auto;
+      background-color: rgb(252, 252, 252);
+      border: 2px solid rgb(208, 209, 205);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+    }
+    /* Bagian Header (Logo + Judul) */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 5px solid rgb(186, 186, 139);
+      padding-bottom: 14px;
+      margin-bottom: 14px;
+    }
+    .header img {
+      width: 150px;
+      height: 150px;
+      margin-right: 20px;
+    }
+    .header-text {
+      text-align: center;
+      flex-grow: 1;
+    }
+    .header-text h1 {
+      font-size: 26px;
+      margin: 0;
+    }
+    /*  Menu Gambar Klik */
+    .menu-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 30px auto 35px auto;
+}
+
+.menu-item img {
+  width: 180px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid rgb(211, 207, 207);
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.menu-item img:hover {
+  transform: scale(1.10);
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+    /* Desain Tabel Data Statistik */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid rgb(10, 10, 10);
+      text-align: center;
+      
+    }
+    td:nth-child(2), 
+    td:nth-child(3) {
+    text-align: left;
+    }
+    th {
+      background-color: rgb(220, 236, 125);
+    }
+
+    tr:hover {
+      background-color: rgb(241, 248, 208);
+      cursor: pointer;
+    }
+
+    </style>
+
+    </head>
+    <body>
+      <!-- Bagian Menu Navigasi -->
+    <nav>
+    <a href="Beranda.html">Beranda 🏡</a> 
+    <a href="Masuk.html">Masuk 👈</a>
+    <a href="Kontak.html">Kontak 📞</a>
+  </nav>
+
+    <div class="container">
+      <!-- Header Halaman (Logo + Judul) -->
+       
+    <div class="header">
+    <img src="Coat_of_arms_of_Jambi.png">
+    <div class="header-text">
+    <h1>DATA STATISTIK KABUPATEN/KOTA</h1>
+    <h2>PROVINSI JAMBI TAHUN 2025</h2>
+    </div>
+    </div>
+    
+    <!-- Menu Gambar Klik -->
+  <div class="menu-wrapper">
+  <div class="menu-container">
+
+    <div class="menu-item">
+
+      <a href="https://bams.jambiprov.go.id/gentala-arasy-jambi-dan-keistimewaannya/" target="_blank">
+    <img src="Jembatan-Gentala-Arasy.png" alt="Gentala Arasy">
+      </a>
+      <div class="caption">Gentala Arasy</div>
+    </div>
+
+    <div class="menu-item">
+      <a href="https://tirto.id/sejarah-rumah-adat-jambi-kajang-lako-ciri-khas-dan-keunikannya-goag" target="_blank">
+      <img src="Kajang_Leko_Rumah_adat_Jambi.jpg" alt="Kajang_Leko_Rumah_adat_Jambi">
+    </a>
+    <div class="caption">Kajang Leko</div>
+    </div>
+
+    <div class="menu-item">
+      <a href="https://www.youtube.com/watch?v=sLJjqzzjkfU" target="_blank">
+      <img src="cerita-rakyat-jambi_169.png" alt="cover cerita rakyat">
+    </a>
+    <div class="caption">Cerita Rakyat Jambi</div>
+    </div>
+
+  </div>
+</div> 
+    
+     <!-- Tabel Data Statistik Kabupaten/Kota -->
+    <table border="1"> 
+    <th>No</th> 
+    <th>Nama Kabupaten/kota</th>
+    <th>Ibu Kota</th>
+    <th>Luas Wilayah (km<sup>2</sup>)</th>
+    <th>Jumlah Penduduk (ribu jiwa)</th>
+    <th>Jumlah Kecamatan</th>
+        
+    </tr>
+    <tr>
+    <td>1</td>
+    <td><a href="https://id.wikipedia.org/wiki/Kabupaten_Batang_Hari" target="_blank">Kabupaten Batanghari</a></td>
+    <td>Muara Bulian</td>
+    <td>5.387,52</td>
+    <td>320,28</td>
+    <td>8</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td><a href="https://id.wikipedia.org/wiki/Kabupaten_Batang_Hari" target="_blank">Kabupaten Batanghari</a></td>
+     <td>Muara Bungo</td>
+    <td>4.760,83</td>
+    <td>386,11</td>
+    <td>17</td>
+    <tr>
+    <td>3</td>
+    <td><a href="https://id.wikipedia.org/wiki/Kabupaten_Kerinci" target="_blank">Kabupaten Kerinci</a></td>
+     <td>Siulak</td>
+    <td>3.445,20</td>
+    <td>258,21</td>
+    <td>16</td>
+    </tr>
+    <tr>
+    <td>4</td>
+    <td><a href="https://id.wikipedia.org/wiki/Kabupaten_Merangin" target="_blank">Kabupaten Merangin</a></td>
+     <td>Bangko</td>
+    <td>7.540,12</td>
+    <td>378,36</td>
+    <td>24</td>
+    </tr>
+    <tr>
+    <td>5</td>
+    <td><a href="https://id.wikipedia.org/wiki/Kabupaten_Muaro_Jambi" target="_blank">Kabupaten Muaro Jambi</a></td>
+     <td>Sengeti</td>
+    <td>5.225,80</td>
+    <td>430,25</td>
+    <td>11</td>
+    </tr>
+    <tr>
+    <td>6</td>
+    <td><a href="https://id.wikipedia.org/wiki/Kabupaten_Sarolangun" target="_blank">Kabupaten Sarolangun</a></td>
+     <td>Sarolangun</td>
+    <td>5.935,89</td>
+    <td>310,68</td>
+    <td>10</td>
+    </tr>
+    <td>7</td>
+    <td><a href="https://id.wikipedia.org/wiki/Kabupaten_Tanjung_Jabung_Barat" target="_blank">Kabupaten Tanjung Jabung Barat</a></td>
+     <td>Kuala Tungkal</td>
+    <td>5.546,06</td>
+    <td>339,63</td>
+    <td>13</td>
+    </tr>
+    <td>8</td>
+    <td><a href="https://id.wikipedia.org/wiki/Kabupaten_Tanjung_Jabung_Timur" target="_blank">Kabupaten Tanjung Jabung Timur</a></td>
+     <td>Muara Sabak</td>
+    <td>4.546,62</td>
+    <td>241,15</td>
+    <td>11</td>
+    </tr>
+    <tr>
+    <td>9</td>
+    <td><a href="https://id.wikipedia.org/wiki/Kabupaten_Tebo" target="_blank">Kabupaten Tebo</a></td>
+     <td>Muara Tebo</td>
+    <td>6.103,74</td>
+    <td>359,64</td>
+    <td>12</td>
+    </tr>
+    <tr>
+    <td>10</td>
+    <td><a href="https://id.wikipedia.org/wiki/Kota_Jambi" target="_blank">Kota Jambi</a></td>
+    <td>Jambi</td>
+    <td>169,89</td>
+    <td>642,26</td>
+    <td>11</td>
+    </tr>
+    <tr>
+    <td>11</td>
+    <td><a href="https://id.wikipedia.org/wiki/Kota_Sungai_Penuh" target="_blank">Kota Sungai Penuh</a></td>
+     <td>Sungai Penuh</td>
+    <td>364,92</td>
+    <td>101,92</td>
+    <td>8</td>
+    </tr>
+    </tr> </table>
+
+    <!-- Paragraf Penjelasan Data Provinsi Jambi -->
+    <p style="text-align: justify;">
+      Provinsi Jambi merupakan salah satu provinsi di Pulau Sumatera yang terdiri atas sembilan kabupaten dan dua kota. 
+      Kabupaten dengan wilayah terluas adalah Kabupaten Merangin dengan 24 kecamatan dan luas 7.540,12 km², 
+      sedangkan wilayah terkecil adalah Kota Jambi seluas 169,89 km². 
+      Namun, dari sisi jumlah penduduk, Kota Jambi memiliki penduduk tertinggi sebanyak 642,26 ribu jiwa 
+      dan wilayah dengan jumlah penduduk paling sedikit adalah Kota Sungai Penuh hanya sebesar 
+      101,92 ribu jiwa.
+    </p>
+
+    <!-- Sumber Data -->
+    <p>
+        Sumber data: 
+        <a href="provinsi-jambi-dalam-angka-2025.pdf" target="_blank">
+        Provinsi Jambi Dalam Angka 2025
+        </a>
+    </p>
+
+    </div>
+    </tr>
+  </table>
+</body>
+</html>
+    
